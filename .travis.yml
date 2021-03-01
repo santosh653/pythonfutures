@@ -1,3 +1,15 @@
+# ----------------------------------------------------------------------------
+#
+# Package             : pythonfutures
+# Source Repo         : https://github.com/agronholm/pythonfutures
+# Travis Job Link     : https://travis-ci.com/github/santosh653/pythonfutures
+# Created travis.yml  : No
+# Maintainer          : Santosh Kulkarni <santoshkulkarni70@gmail.com>
+#
+# Script License      : Apache License, Version 2 or later
+#
+# ----------------------------------------------------------------------------
+
 language: python
 sudo: false
 
