@@ -17,14 +17,7 @@ jobs:
     arch: amd64
   - env: TOXENV=py27
     arch: amd64
-      
-  - env: TOXENV=pypy
-    python: pypy
-    arch: ppc64le
-  - env: TOXENV=py26
-    dist: trusty
-    python: "2.6"
-    arch: ppc64le
+  #Python Versions pypy & 2.6 are not supported on power, so not including them for power
   - env: TOXENV=py27
     arch: ppc64le
 
