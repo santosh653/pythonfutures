@@ -7,32 +7,28 @@ stages:
     if: type = push AND tag =~ ^\d+\.\d+\.\d+
 
 jobs:
-  include:
-    - env: TOXENV=pypy
+ include:
+  - env: TOXENV=pypy
       python: pypy
       arch: amd64
-
-    - env: TOXENV=py26
+  - env: TOXENV=py26
       dist: trusty
       python: "2.6"
       arch: amd64
-
-    - env: TOXENV=py27
+  - env: TOXENV=py27
       arch: amd64
-    
-    - env: TOXENV=pypy
+      
+  - env: TOXENV=pypy
       python: pypy
       arch: ppc64le
-
-    - env: TOXENV=py26
+  - env: TOXENV=py26
       dist: trusty
       python: "2.6"
       arch: ppc64le
-
-    - env: TOXENV=py27
+  - env: TOXENV=py27
       arch: ppc64le
 
-    - stage: deploy to pypi
+   - stage: deploy to pypi
       install: skip
       script: skip
       deploy:
